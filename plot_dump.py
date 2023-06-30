@@ -13,7 +13,7 @@ LAYER_COUNT = 32
 LINE_CLUSTER_COUNT = 5
 # use half of the cores as per hammer bundling requires 2 cores per process
 # be extra cautious if you're on Windows, as multiprocessing works weird
-PROCESS_COUNT = cpu_count() / 2
+PROCESS_COUNT = cpu_count() // 2
 N_NEIGHBORS = 100
 MIN_DIST = 0.25
 
